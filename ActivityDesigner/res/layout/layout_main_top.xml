@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip" >
+
+        <ImageView
+            android:id="@+id/personalinfo_item_profile"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/my_launcher" />
+
+        <TextView
+            android:id="@+id/personalinfo_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/personalinfo_item_profile"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@+id/personalinfo_item_profile"
+            android:text="摄影爱好者"
+            android:textColor="@color/Royalblue"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/personalinfo_item_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/personalinfo_item_username"
+            android:layout_below="@+id/personalinfo_item_username"
+            android:layout_marginTop="10dip"
+            android:text="This man is too lazy to write something about him" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/activity_album_item_img"
+                android:layout_width="120dip"
+                android:layout_height="110dip"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/type_big_7" />
+
+            <TextView
+                android:id="@+id/activity_album_item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="20dip"
+                android:text="代表作"
+                android:textColor="@color/Black"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <CheckBox 
+            android:id="@+id/activity_album_item_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

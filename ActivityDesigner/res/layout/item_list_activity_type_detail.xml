@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/activitytypedetail_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="90dip"
+        android:background="@drawable/bg_event_detail_action_pressed" >
+
+        <TextView
+            android:id="@+id/activitytypedetail_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"
+            android:text="活动类型"
+            android:textColor="@color/White"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/activitytypedetail_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/activitytypedetail_item_title"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+    
+        <app.view.layout.ExpandingLayout
+            android:id="@+id/expanding_layout"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:visibility="gone">
+
+            	<include
+                    android:id="@+id/expanding_item_type"
+                    layout="@layout/layout_expanding_type"
+                    android:visibility="gone" 
+                  />
+            	<include
+                    android:id="@+id/expanding_item_name"
+                    layout="@layout/layout_expanding_name"
+                    android:visibility="gone" 
+                  />
+            	<include
+                    android:id="@+id/expanding_item_date"
+                    layout="@layout/layout_expanding_date"
+                    android:visibility="gone" 
+                  />
+                <include
+                    android:id="@+id/expanding_item_note"
+                    layout="@layout/layout_expanding_note"
+                    android:visibility="gone" 
+                  />
+          	   <include 
+          	       android:id="@+id/expanding_item_time"
+          	       layout="@layout/layout_expanding_time"
+          	       android:visibility="gone"
+          	       />
+          	    <include 
+          	       android:id="@+id/expanding_item_location"
+          	       layout="@layout/layout_expanding_location"
+          	       android:visibility="gone"
+          	       />
+          	     <include 
+          	       android:id="@+id/expanding_item_contact"
+          	       layout="@layout/layout_expanding_contact"
+          	       android:visibility="gone"
+          	       />
+    </app.view.layout.ExpandingLayout>
+
+</LinearLayout>

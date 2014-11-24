@@ -1,0 +1,187 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.Translucent" parent="android:style/Theme.Translucent" mce_bogus="1">       
+	    <item name="android:windowNoTitle">true</item>  
+        <item name="android:colorForeground">#fff</item>  
+    </style>
+    
+    <style name="main_type_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+    
+   <style name="main_type_icon_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+       <style name="AppTheme" parent="TransparentTheme"></style>
+
+    <style name="TransparentTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="homeAsUpIndicator">@drawable/abc_ic_ab_back_holo_dark</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle.Transparent</item>
+        <item name="actionBarStyle">@style/ActionBarStyle.Transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBarOverlay">true</item>
+    </style>
+
+    <style name="ActionBarStyle.Transparent" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@null</item>
+        <item name="android:displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="displayOptions">homeAsUp|showHome|showTitle</item>
+        <item name="android:titleTextStyle">@style/ActionBarStyle.Transparent.TitleTextStyle</item>
+        <item name="titleTextStyle">@style/ActionBarStyle.Transparent.TitleTextStyle</item>
+    </style>
+
+    <style name="ActionBarStyle.Transparent.TitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+  
+     <!-- 字体样式 start -->
+    <style name="chat_date_style">
+        <item name="android:textColor">#F5F5F5</item>
+        <item name="android:background">#BEBDBE</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+    
+     <!-- landcape theme. -->
+     <style name="main_top_bg_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dip</item>
+        <item name="android:background">@drawable/main_top_bg</item>
+    </style>
+    
+     <style name="main_top_left_style">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/selector_button_blue</item>
+    </style>
+    
+     <style name="main_top_center_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/White</item>
+    </style>
+    
+    <style name="main_top_right_style">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginRight">10dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@drawable/selector_button_blue</item>
+    </style>
+    
+    <style name="upload_photo_btn_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginLeft">20dip</item>
+        <item name="android:layout_marginRight">20dip</item>
+        <item name="android:background">@drawable/selector_button_blue_round</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <style name="my_album_bottom_btn_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">14dip</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/selector_textview_gray</item>
+    </style>
+    
+    <style name="activity_type_detail_item_style">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+         <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">7dip</item>
+         <item name="android:layout_marginLeft">10dip</item>
+    </style>
+    
+    <style name="activity_type_detail_edit_style">
+         <item name="android:layout_width">120dp</item>
+         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/White</item>
+         <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">15dip</item>
+         <item name="android:layout_marginLeft">7dip</item>        
+         <item name="android:alpha">1</item>
+         <item name="android:hint">自定义</item>
+    </style>
+    
+    <style name="activity_type_detail_text_style">
+         <item name="android:layout_width">120dp</item>
+         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/Black</item>
+         <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">15dip</item>
+         <item name="android:layout_marginLeft">7dip</item>        
+         <item name="android:alpha">0.5</item>
+    </style>
+    
+    <style name="activity_type_detail_look_style">
+         <item name="android:layout_width">100dip</item>
+         <item name="android:layout_height">40dip</item>
+        <item name="android:background">@drawable/map_photo_overlay_3</item>
+         <item name="android:text">查看</item>
+        <item name="android:layout_gravity">center</item>
+         <item name="android:layout_marginBottom">10dip</item>        
+         <item name="android:textColor">@color/White</item>
+    </style>
+    
+    <style name="activity_type_detail_main_style">
+         <item name="android:layout_width">wrap_content</item>
+         <item name="android:layout_height">158dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+         <item name="android:layout_marginRight">5dip</item>
+        <item name="android:layout_weight">1.0</item>
+         <item name="android:background">@drawable/btn_feed_attention_click</item>        
+         <item name="android:orientation">vertical</item>
+    </style>
+    
+    <!-- Loding_dialog样式Start -->
+    <style name="Dialog_bocop">
+        <item name="android:windowBackground">@color/loading_dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Dialog</item>
+    </style>
+  
+    <style name="main_left_button_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dip</item>
+    </style>
+    <!-- Loding_dialog样式End -->
+    <!-- landcape theme. -->
+</resources>

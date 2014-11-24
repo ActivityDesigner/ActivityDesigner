@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_block_7"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="允许投票" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="允许聊天" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_block_6"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/activity_type_detail_item_style"
+                    android:text="着装建议" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/type_detail_drawer_spinner"
+                android:layout_width="100dip"
+                android:layout_height="40dip" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/type_detail_drawer_edit"
+                    style="@style/activity_type_detail_edit_style">
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_block_5"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/activity_type_detail_item_style"
+                    android:text="买单建议" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/type_detail_pay_spinner"
+                android:layout_width="125dip"
+                android:layout_height="40dip"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/type_detail_pay_edit"
+                    style="@style/activity_type_detail_edit_style"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_block_4"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/activity_type_detail_item_style"
+                    android:text="出行建议" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/editText3"
+                    style="@style/activity_type_detail_edit_style" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_block_3"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="140dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="20dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/color_block_2"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            style="@style/activity_type_detail_main_style">
+
+            <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:text="活动名称" 
+                    android:textColor="@color/White"
+                    style="@style/activity_type_detail_item_style"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0" >
+
+                <EditText
+                    android:id="@+id/type_detail_name_edit"
+                    style="@style/activity_type_detail_edit_style" 
+                    android:textColorHint="@color/White">
+
+                </EditText>
+
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/type_detail_name_look"
+                style="@style/activity_type_detail_look_style"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/activity_type_detail_main_style" >
+            
+             <LinearLayout
+                android:layout_width="140dip"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:text="活动日期" 
+                    android:textColor="@color/White"
+                    style="@style/activity_type_detail_item_style"/>
+
+            </LinearLayout>
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" >
+                
+                   <EditText
+                    android:id="@+id/type_detail_date_edit"
+                    style="@style/activity_type_detail_edit_style"
+                    android:textColorHint="@color/White"
+                    android:textColorHighlight="@color/White">
+                </EditText>
+             </LinearLayout>
+
+             <Button
+                 android:id="@+id/type_detail_date_look"
+                 style="@style/activity_type_detail_look_style" 
+                 android:layout_marginTop="10dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_marginTop="20dip"
+            style="@style/activity_type_detail_main_style">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                   
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动时间"
+                    style="@style/activity_type_detail_item_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/type_detail_time_edit"
+                    style="@style/activity_type_detail_edit_style"
+                	android:textColorHint="@color/White"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/type_detail_time_look"
+                 style="@style/activity_type_detail_look_style"
+                 android:layout_marginTop="10dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dip"
+            style="@style/activity_type_detail_main_style" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="活动地点" 
+                    style="@style/activity_type_detail_item_style"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/type_detail_location_edit"
+					style="@style/activity_type_detail_edit_style" 
+					android:maxLines="3"
+					android:textColorHint="@color/White"
+					android:textColorHighlight="@color/White"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/type_detail_location_look"
+					style="@style/activity_type_detail_look_style"
+					android:layout_marginTop="10dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_marginTop="20dip"
+           style="@style/activity_type_detail_main_style" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:text="活动参与"
+                    style="@style/activity_type_detail_item_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/type_detail_contact_edit"
+					style="@style/activity_type_detail_edit_style" 
+					android:editable="false"
+					android:textColorHint="@color/White"
+					android:maxLines="3">
+                </EditText>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/type_detail_contact_look"
+                style="@style/activity_type_detail_look_style" 
+                android:layout_marginTop="10dip"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dip"
+            style="@style/activity_type_detail_main_style" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/main_bottom_activityinfo" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:text="活动备注"
+                    style="@style/activity_type_detail_item_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/type_detail_note_edit"
+					style="@style/activity_type_detail_edit_style" 
+					android:textColorHint="@color/White"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/type_detail_note_look"
+                style="@style/activity_type_detail_look_style" 
+                android:layout_marginTop="10dip"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

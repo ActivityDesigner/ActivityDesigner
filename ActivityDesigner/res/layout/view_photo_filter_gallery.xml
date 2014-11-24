@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <!-- Gallery view 图片效果图 -->
+   	<HorizontalScrollView 
+   		android:id="@+id/galleryScroll"
+		android:layout_width="fill_parent"
+		android:layout_height="90dip"
+		android:scrollbars="none"
+		android:focusable="false"
+		android:layout_alignParentBottom="true"
+		android:background="@drawable/camera_filter_review_bg"
+		>
+		<FrameLayout 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"			
+			android:focusable="false"
+			android:layout_gravity="center_vertical"
+			>
+			<LinearLayout 
+				android:layout_width="770dp"
+				android:layout_height="wrap_content" 
+				android:orientation="horizontal"
+				android:focusable="false"
+				android:gravity="center"
+				android:layout_gravity="center"
+				>
+				<GridView android:id="@+id/gallery" 
+					android:layout_width="fill_parent"
+					android:gravity="center" 
+					android:layout_height="wrap_content"
+					android:horizontalSpacing="1.0dip" 
+					android:verticalSpacing="1.0dip"
+					android:stretchMode="spacingWidthUniform" 
+					android:numColumns="auto_fit"
+					android:columnWidth="70dip"
+					android:focusable="false"
+					android:cacheColorHint="#00000000"
+					android:listSelector="#00000000"
+					android:layout_gravity="center"
+					>
+				</GridView>
+
+			</LinearLayout>
+		</FrameLayout>
+	</HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@drawable/head_bg_5" >
+
+        <ImageView
+            android:id="@+id/add_remind_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/icon_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="添加提醒"
+            android:textColor="@color/White"
+            android:textSize="24sp" />
+        
+          <ImageView
+            android:id="@+id/add_remind_sure"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginTop="10dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:src="@drawable/abc_ic_cab_done_holo_dark" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/calendar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/customize_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="customize" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

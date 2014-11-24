@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1.0"
+    android:orientation="vertical" >
+
+    <RelativeLayout style="@style/main_top_bg_style" >
+
+         <ImageView
+             android:id="@+id/photo_filter_back"
+             style="@style/main_top_left_style"
+             android:src="@drawable/top_up_indicator_icon" />
+         
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/main_top_center_style"
+            android:text="编辑图片" />
+        
+        <ImageView
+            android:id="@+id/photo_filter_finish"
+            android:src="@drawable/abc_ic_cab_done_holo_dark"
+            style="@style/main_top_right_style" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/photo_filter_show"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:clickable="true"
+            android:gravity="center"
+            android:scaleType="fitCenter" />
+
+        <ProgressBar
+            android:id="@+id/photo_filter_progressbar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/photo_filter_gallery"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/view_photo_filter_gallery"
+            android:layout_gravity="bottom" />
+
+    </FrameLayout>
+
+</LinearLayout>

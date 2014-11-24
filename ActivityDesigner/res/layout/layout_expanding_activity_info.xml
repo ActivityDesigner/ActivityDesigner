@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/expanding_activityinfo_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dip"
+                android:layout_marginTop="10dip"
+                android:text="类型" />
+
+            <ImageView
+                android:id="@+id/expanding_activityinfo_typeimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/appointment" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/info_name" />
+
+                <TextView
+                    android:id="@+id/expanding_activityinfo_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="名称" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/info_date" />
+
+                <TextView
+                    android:id="@+id/expanding_activityinfo_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="日期" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/info_time" />
+
+                <TextView
+                    android:id="@+id/expanding_activityinfo_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="时间" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/info_place" />
+
+                <TextView
+                    android:id="@+id/expanding_activityinfo_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="地点" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip" >
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/info_people" />
+
+                <TextView
+                    android:id="@+id/expanding_activityinfo_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="联系人" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/expanding_activityinfo_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dip"
+                    android:src="@drawable/info_chat" />
+
+                <ImageView
+                    android:id="@+id/expanding_activityinfo_album"
+                    android:layout_width="35dip"
+                    android:layout_height="35dip"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginTop="17dip"
+                    android:background="@drawable/info_picture" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="10dip"
+            android:src="@drawable/icon_note" />
+
+        <TextView
+            android:id="@+id/expanding_activityinfo_note"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="5dip"
+            android:text="活动备注" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/expanding_activityinfo_sure"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/icon_sure" />
+
+        <ImageView
+            android:id="@+id/expanding_activityinfo_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/abc_ic_commit_search_api_holo_light" />
+
+    </RelativeLayout>
+
+</LinearLayout>

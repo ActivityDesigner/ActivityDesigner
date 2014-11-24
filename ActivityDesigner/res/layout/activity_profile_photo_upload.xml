@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+   >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true" >
+
+        <app.view.widget.headview.RingView
+            android:id="@+id/profile_photo_upload_ringview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:id="@+id/circle_upload_dialog_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" 
+            
+        android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/profile_photo_upload_take_photo"
+                style="@style/upload_photo_btn_style"
+                android:layout_marginTop="20dip"
+                android:text="拍照" />
+
+            <Button
+                android:id="@+id/profile_photo_upload_pick_photo"
+                style="@style/upload_photo_btn_style"
+                android:layout_marginTop="5dip"
+                android:text="从相册选择" />
+            
+            <Button
+                android:id="@+id/profile_photo_upload_save"
+                style="@style/upload_photo_btn_style"
+                android:layout_marginTop="5dip"
+                android:text="保存" 
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/profile_photo_upload_back"
+                style="@style/upload_photo_btn_style"
+                android:layout_marginBottom="15dip"
+                android:layout_marginTop="15dip"
+                android:text="取消" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
