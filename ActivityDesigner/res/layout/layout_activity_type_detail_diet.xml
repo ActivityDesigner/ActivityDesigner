@@ -23,7 +23,7 @@
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_diet_ballot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="允许投票" 
@@ -38,13 +38,12 @@
                 android:layout_marginTop="8dip">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_diet_chat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="允许聊天" 
@@ -59,13 +58,12 @@
                 android:layout_marginTop="8dip">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_diet_album"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="新建相册" 
@@ -84,13 +82,11 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView1"
                     android:text="聚餐类型" 
                     android:textColor="@color/White"
                     style="@style/activity_type_detail_item_style"/>
@@ -103,7 +99,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_diettype_advice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -115,7 +111,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_diettype_spinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
@@ -138,13 +134,11 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView1"
                     android:text="买单建议" 
                     android:textColor="@color/White"
                     style="@style/activity_type_detail_item_style"/>
@@ -157,7 +151,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_dietbuy_advice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -169,7 +163,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_dietbuy_spinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
@@ -184,13 +178,11 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView1"
                     android:text="用餐禁忌" 
                     android:textColor="@color/White"
                     style="@style/activity_type_detail_item_style"/>
@@ -202,13 +194,12 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_dietdrink_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="是否饮酒" 

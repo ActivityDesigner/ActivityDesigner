@@ -107,31 +107,69 @@ public class ActivityTypeDetailActivity2 extends BaseActivity {
 	CheckBox mSportChat;  //允许聊天
 	EditText mSportAdvice1; //活动建议1输入框
 	Spinner mSportSpinner1; //活动建议1下拉框
-	EditText mSportAdvice2;
-	Spinner mSportSpinner2;
-	EditText mSportAdvice3;
-	Spinner mSportSpinner3;
-	EditText mSportAdvice4;
-	Spinner mSportSpinner4;
-	EditText mSportAdvice5;
-	Spinner mSportSpinner5;
+	EditText mSportAdvice2;	//活动建议2输入框
+	Spinner mSportSpinner2;	//活动建议2下拉框
+	EditText mSportAdvice3;	//活动建议3输入框
+	Spinner mSportSpinner3;	//活动建议3下拉框
+	EditText mSportAdvice4;	//活动建议4输入框
+	Spinner mSportSpinner4;	//活动建议4下拉框
+	EditText mSportAdvice5;	//活动建议5输入框
+	Spinner mSportSpinner5;	//活动建议5下拉框
 	/**餐饮活动**/
-	CheckBox mDietBallot;
-	CheckBox mDietAlbum;
-	CheckBox mDietChat;
-	Spinner mDietTypeSpinner;
-	EditText mDietTypeEdit;
-	Spinner mDietAdviceSpinner;
-	EditText mDietAdviceEdit;
-	CheckBox mDietDrink;
+	CheckBox mDietBallot;	//允许投票
+	CheckBox mDietAlbum;	//新建相册
+	CheckBox mDietChat;	//允许聊天
+	Spinner mDietTypeSpinner;	//聚餐类型下拉
+	EditText mDietTypeEdit;		//聚餐类型输入框
+	Spinner mDietAdviceSpinner;	//买单建议下拉框
+	EditText mDietAdviceEdit;	//买单建议输入框
+	CheckBox mDietDrink;	//是否饮酒
 	/**会议活动**/
-	
+	CheckBox mMeetBallot;	//允许投票
+	CheckBox mMeetAlbum;	//新建相册
+	CheckBox mMeetChat;	//允许聊天
+	EditText mMeetlengthEdit;	//会议时长输入框
+	Spinner mMeetlengthSpinner;	//会议时长下拉框
+	Button mMeetSpeaker1;	//选择主题1演讲人
+	Button mMeetSpeaker2;	//选择主题2演讲人
+	Button mMeetSpeaker3;	//选择主题3演讲人
+	Button mMeetSpeaker4;	//选择主题4演讲人
 	/**消费活动**/
+	CheckBox mConsumptionBallot;	//允许投票
+	CheckBox mConsumptionAlbum;	//新建相册
+	CheckBox mConsumptionChat;	//允许聊天
+	Spinner mConsumptionAdviceSpinner;	//买单建议下拉框
+	EditText mConsumptionAdviceEdit;	//买单建议输入框
+	EditText mConsumptionLocation1Edit;	//推荐地点1输入框
+	Button mConsumptionLocation1Btn;	//推荐地点1查看
+	EditText mConsumptionLocation2Edit;	//推荐地点2输入框
+	Button mConsumptionLocation2Btn;	//推荐地点2查看
+	EditText mConsumptionLocation3Edit;	//推荐地点3输入框
+	Button mConsumptionLocation3Btn;	//推荐地点3查看
+	EditText mConsumptionLocation4Edit;	//推荐地点4输入框
+	Button mConsumptionLocation4Btn;	//推荐地点4查看
 	
 	/**工作活动**/
-	
-	/**运动活动**/
-	
+	CheckBox mWorkBallot;	//允许投票
+	CheckBox mWorkAlbum;	//新建相册
+	CheckBox mWorkChat;	//允许聊天
+	Button mWorkNewtask;	//新建任务
+	//Button mWorkTask1Button;	//任务1
+	//Button mWorkTask2Button;	//任务2
+	//Button mWorkTask3Button;	//任务3
+	//Button mWorkTask4Button;	//任务4
+	/**自定义活动**/
+	CheckBox mDIYBallot;	//允许投票
+	CheckBox mDIYAlbum;	//新建相册
+	CheckBox mDIYChat;	//允许聊天
+	EditText mDIY1Edit;	//自定义1输入框
+	Button mDIY1Button;	//	自定义1查看
+	EditText mDIY2Edit;	//自定义2输入框
+	Button mDIY2Button;	//	自定义2查看
+	EditText mDIY3Edit;	//自定义3输入框
+	Button mDIY3Button;	//	自定义3查看
+	EditText mDIY4Edit;	//自定义4输入框
+	Button mDIY4Button;	//	自定义4查看
 	@Override
 	public void setView() {
 		// TODO Auto-generated method stub
@@ -207,7 +245,20 @@ public class ActivityTypeDetailActivity2 extends BaseActivity {
 		View view;
 		views.add(View.inflate(this,R.layout.layout_activity_type_detail_1, null));
 		view = View.inflate(this,R.layout.layout_activity_type_detail_sport,null);
-		mSportBallot = (CheckBox)view.findViewById(R.id.type_detail_sport_ballot);
+		mSportBallot = (CheckBox)view.findViewById(R.id.type_detail_sport_ballot);	//允许投票
+		mSportChat = (CheckBox)view.findViewById(R.id.type_detail_sport_chat);	//允许聊天
+		mSportAlbum = (CheckBox)view.findViewById(R.id.type_detail_sport_album);	//新建相册
+		
+		mSportAdvice1 = (EditText)view.findViewById(R.id.type_detail_sport_advice_1);
+		mSportSpinner1 = (Spinner)view.findViewById(R.id.type_detail_sport_spinner_1);
+		mSportAdvice2 = (EditText)view.findViewById(R.id.type_detail_sport_advice_2);
+		mSportSpinner2 = (Spinner)view.findViewById(R.id.type_detail_sport_spinner_2);
+		mSportAdvice3 = (EditText)view.findViewById(R.id.type_detail_sport_advice_3);
+		mSportSpinner3 = (Spinner)view.findViewById(R.id.type_detail_sport_spinner_3);
+		mSportAdvice4 = (EditText)view.findViewById(R.id.type_detail_sport_advice_4);
+		mSportSpinner4 = (Spinner)view.findViewById(R.id.type_detail_sport_spinner_4);
+		mSportAdvice5 = (EditText)view.findViewById(R.id.type_detail_sport_advice_5);
+		mSportSpinner5 = (Spinner)view.findViewById(R.id.type_detail_sport_spinner_5);
 		
 		views.add(view);
 	}
@@ -217,30 +268,99 @@ public class ActivityTypeDetailActivity2 extends BaseActivity {
 		View view;
 		views.add(View.inflate(this,R.layout.layout_activity_type_detail_1, null));
 		view = View.inflate(this,R.layout.layout_activity_type_detail_diet,null);
+		
+		mDietBallot = (CheckBox)view.findViewById(R.id.type_detail_diet_ballot);		//允许投票
+		mDietChat = (CheckBox)view.findViewById(R.id.type_detail_diet_chat);	//允许聊天
+		mDietAlbum = (CheckBox)view.findViewById(R.id.type_detail_diet_album);	//新建相册
+		
+		mDietTypeEdit = (EditText)view.findViewById(R.id.type_detail_diettype_advice);	//聚餐类型输入框
+		mDietTypeSpinner = (Spinner)view.findViewById(R.id.type_detail_diettype_spinner);	//聚餐类型下拉框
+		mDietAdviceEdit = (EditText)view.findViewById(R.id.type_detail_dietbuy_advice);	//买单建议输入框
+		mDietAdviceSpinner = (Spinner)view.findViewById(R.id.type_detail_dietbuy_spinner);	//买单建议下拉框
+		mDietDrink = (CheckBox)view.findViewById(R.id.type_detail_dietdrink_checkbox);	//是否饮酒
+		
 		views.add(view);
 	}
 	
 	private void meetingViewInitial(){
 		views = new ArrayList<View>();
+		View view;
 		views.add(View.inflate(this,R.layout.layout_activity_type_detail_1, null));
-		views.add(View.inflate(this, R.layout.layout_activity_type_detail_meeting,null));
+		view = View.inflate(this, R.layout.layout_activity_type_detail_meeting,null);
+		
+		mMeetBallot = (CheckBox)view.findViewById(R.id.type_detail_meet_ballot);	//允许投票
+		mMeetChat = (CheckBox)view.findViewById(R.id.type_detail_meet_chat);		//允许聊天
+		mMeetAlbum = (CheckBox)view.findViewById(R.id.type_detail_meet_album);	//新建相册
+		
+		mMeetlengthEdit = (EditText)view.findViewById(R.id.type_detail_meettime_edit); //会议时长输入框
+		mMeetlengthSpinner = (Spinner)view.findViewById(R.id.type_detail_meettime_spinner);	//会议时长下拉框
+		mMeetSpeaker1 = (Button)view.findViewById(R.id.type_detail_meetspeaker1_button);	//选择主题1演讲人
+		mMeetSpeaker2 = (Button)view.findViewById(R.id.type_detail_meetspeaker2_button);	//选择主题2演讲人
+		mMeetSpeaker3 = (Button)view.findViewById(R.id.type_detail_meetspeaker3_button);	//选择主题3演讲人
+		mMeetSpeaker4 = (Button)view.findViewById(R.id.type_detail_meetspeaker4_button);	//选择主题4演讲人
+		
+		views.add(view);
 	}
 	
 	private void consumptionViewInitial(){
 		views = new ArrayList<View>();
 		views.add(View.inflate(this,R.layout.layout_activity_type_detail_1, null));
-		views.add(View.inflate(this, R.layout.layout_activity_type_detail_consumption,null));
+		View view;
+		view = View.inflate(this, R.layout.layout_activity_type_detail_consumption,null);
+		
+		mConsumptionBallot = (CheckBox)view.findViewById(R.id.type_detail_consumption_ballot);	//允许投票
+		mConsumptionChat = (CheckBox)view.findViewById(R.id.type_detail_consumption_chat);	//允许聊天
+		mConsumptionAlbum = (CheckBox)view.findViewById(R.id.type_detail_consumption_album);	//新建相册
+		
+		mConsumptionAdviceEdit = (EditText)view.findViewById(R.id.type_detail_consumption_advice_edit);	//买单建议输入框
+		mConsumptionAdviceSpinner = (Spinner)view.findViewById(R.id.type_detail_consumption_advice_spinner);		//买单建议下拉框
+		mConsumptionLocation1Edit = (EditText)view.findViewById(R.id.type_detail_consumption_location1_edit);	//推荐地点输入框
+		mConsumptionLocation1Btn = (Button)view.findViewById(R.id.type_detail_consumption_location1_button);	//查看推荐地点
+		mConsumptionLocation2Edit = (EditText)view.findViewById(R.id.type_detail_consumption_location2_edit);	//推荐地点输入框
+		mConsumptionLocation2Btn = (Button)view.findViewById(R.id.type_detail_consumption_location2_button);	//查看推荐地点
+		mConsumptionLocation3Edit = (EditText)view.findViewById(R.id.type_detail_consumption_location3_edit);	//推荐地点输入框
+		mConsumptionLocation3Btn = (Button)view.findViewById(R.id.type_detail_consumption_location3_button);	//查看推荐地点
+		mConsumptionLocation4Edit = (EditText)view.findViewById(R.id.type_detail_consumption_location4_edit);	//推荐地点输入框
+		mConsumptionLocation4Btn = (Button)view.findViewById(R.id.type_detail_consumption_location4_button);	//查看推荐地点
+		
+		views.add(view);
 	}
 	
 	private void workViewInitial(){
 		views = new ArrayList<View>();
 		views.add(View.inflate(this,R.layout.layout_activity_type_detail_1, null));
-		views.add(View.inflate(this, R.layout.layout_activity_type_detail_work,null));
+		View view;
+		view=View.inflate(this, R.layout.layout_activity_type_detail_work,null);
+		
+		mWorkBallot = (CheckBox)view.findViewById(R.id.type_detail_work_ballot);	//允许投票
+		mWorkChat = (CheckBox)view.findViewById(R.id.type_detail_work_chat);	//允许聊天
+		mWorkAlbum = (CheckBox)view.findViewById(R.id.type_detail_work_album);	//新建相册
+		
+		mWorkNewtask = (Button)view.findViewById(R.id.type_detail_work_addtask_button);	//新建任务
+		//mWorkTask1Button = (Button)view.findViewById(R.id.type_detail_work_task1_button);	
+		
+		views.add(view);
 	}
 	private void DIYViewInitial(){
 		views = new ArrayList<View>();
 		views.add(View.inflate(this,R.layout.layout_activity_type_detail_1, null));
-		views.add(View.inflate(this, R.layout.layout_activity_type_detail_diy,null));
+		View view;
+		view = View.inflate(this, R.layout.layout_activity_type_detail_diy,null);
+		
+		mDIYBallot = (CheckBox)view.findViewById(R.id.type_detail_diy_ballot);	//允许投票
+		mDIYChat = (CheckBox)view.findViewById(R.id.type_detail_diy_chat);	//允许聊天
+		mDIYAlbum = (CheckBox)view.findViewById(R.id.type_detail_diy_album);	//新建相册
+		
+		mDIY1Edit = (EditText)view.findViewById(R.id.type_detail_diy1_edit);	//自定义1输入框
+		mDIY1Button = (Button)view.findViewById(R.id.type_detail_diy1_look);	//自定义1查看
+		mDIY2Edit = (EditText)view.findViewById(R.id.type_detail_diy2_edit);	//自定义2输入框
+		mDIY2Button = (Button)view.findViewById(R.id.type_detail_diy2_look);	//自定义2查看
+		mDIY3Edit = (EditText)view.findViewById(R.id.type_detail_diy3_edit);	//自定义3输入框
+		mDIY3Button = (Button)view.findViewById(R.id.type_detail_diy3_look);	//自定义3查看
+		mDIY4Edit = (EditText)view.findViewById(R.id.type_detail_diy4_edit);	//自定义4输入框
+		mDIY4Button = (Button)view.findViewById(R.id.type_detail_diy4_look);	//自定义4查看
+		
+		views.add(view);
 	}
 	
 	@Override
@@ -255,6 +375,25 @@ public class ActivityTypeDetailActivity2 extends BaseActivity {
 		mContactButton.setOnClickListener(this);
 		mNoteButton.setOnClickListener(this);
 		/**运动**/
+		/**餐饮**/
+		/**会议**/
+		mMeetSpeaker1.setOnClickListener(this);
+		mMeetSpeaker2.setOnClickListener(this);
+		mMeetSpeaker3.setOnClickListener(this);
+		mMeetSpeaker4.setOnClickListener(this);
+		/**消费**/
+		mConsumptionLocation1Btn.setOnClickListener(this);
+		mConsumptionLocation2Btn.setOnClickListener(this);
+		mConsumptionLocation3Btn.setOnClickListener(this);
+		mConsumptionLocation4Btn.setOnClickListener(this);
+		/**工作**/
+		mWorkNewtask.setOnClickListener(this);
+		/**自定义**/
+		mDIY1Button.setOnClickListener(this);
+		mDIY2Button.setOnClickListener(this);
+		mDIY3Button.setOnClickListener(this);
+		mDIY4Button.setOnClickListener(this);
+		
 	}
 
 	@Override

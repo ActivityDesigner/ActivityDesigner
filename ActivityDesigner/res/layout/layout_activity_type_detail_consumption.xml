@@ -16,13 +16,12 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_consumption_ballot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="允许投票" 
@@ -37,13 +36,12 @@
                 android:layout_marginTop="8dip">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_consumption_chat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="允许聊天" 
@@ -58,13 +56,13 @@
                 android:layout_marginTop="8dip">
 
                 <ImageView
-                    android:id="@+id/imageView1"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/checkBox1"
+                    android:id="@+id/type_detail_consumption_album"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="新建相册" 
@@ -83,13 +81,11 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView1"
                     android:text="买单建议" 
                     android:textColor="@color/White"
                     style="@style/activity_type_detail_item_style"/>
@@ -102,7 +98,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_consumption_advice_edit"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -114,7 +110,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_consumption_advice_spinner"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                 </LinearLayout>
@@ -138,14 +134,12 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                    
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="推荐地点1"
@@ -158,14 +152,14 @@
                 android:layout_height="wrap_content" >
 
                 <EditText
-                    android:id="@+id/type_detail_time_edit"
+                    android:id="@+id/type_detail_consumption_location1_edit"
                     style="@style/activity_type_detail_edit_style"
                 	android:textColorHint="@color/White"/>
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/type_detail_time_look"
+                android:id="@+id/type_detail_consumption_location1_button"
                  style="@style/activity_type_detail_look_style"
                  android:layout_marginTop="10dip"/>
 
@@ -180,13 +174,11 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="推荐地点2" 
@@ -199,7 +191,7 @@
                 android:layout_height="wrap_content" >
 
                 <EditText
-                    android:id="@+id/type_detail_location_edit"
+                    android:id="@+id/type_detail_consumption_location2_edit"
 					style="@style/activity_type_detail_edit_style" 
 					android:maxLines="3"
 					android:textColorHint="@color/White"
@@ -208,7 +200,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/type_detail_location_look"
+                android:id="@+id/type_detail_consumption_location2_button"
 					style="@style/activity_type_detail_look_style"
 					android:layout_marginTop="10dip"/>
 
@@ -229,14 +221,12 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                    
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="推荐地点3"
@@ -249,14 +239,14 @@
                 android:layout_height="wrap_content" >
 
                 <EditText
-                    android:id="@+id/type_detail_time_edit"
+                    android:id="@+id/type_detail_consumption_location3_edit"
                     style="@style/activity_type_detail_edit_style"
                 	android:textColorHint="@color/White"/>
 
             </LinearLayout>
 
             <Button
-                android:id="@+id/type_detail_time_look"
+                android:id="@+id/type_detail_consumption_location3_button"
                  style="@style/activity_type_detail_look_style"
                  android:layout_marginTop="10dip"/>
 
@@ -271,13 +261,11 @@
                 android:layout_height="wrap_content" >
 
                 <ImageView
-                    android:id="@+id/imageView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <TextView
-                    android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="推荐地点4" 
@@ -290,7 +278,7 @@
                 android:layout_height="wrap_content" >
 
                 <EditText
-                    android:id="@+id/type_detail_location_edit"
+                    android:id="@+id/type_detail_consumption_location4_edit"
 					style="@style/activity_type_detail_edit_style" 
 					android:maxLines="3"
 					android:textColorHint="@color/White"
@@ -299,7 +287,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/type_detail_location_look"
+                android:id="@+id/type_detail_consumption_location4_button"
 					style="@style/activity_type_detail_look_style"
 					android:layout_marginTop="10dip"/>
 

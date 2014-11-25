@@ -17,7 +17,6 @@
                 android:layout_height="wrap_content">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
@@ -38,13 +37,12 @@
                 android:layout_marginTop="8dip">
 
                 <ImageView
-                    android:id="@+id/imageView1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
 
                 <CheckBox
-                    android:id="@+id/type_detial_sport_chat"
+                    android:id="@+id/type_detail_sport_chat"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="允许聊天" 
@@ -59,7 +57,7 @@
                 android:layout_marginTop="8dip">
 
                 <ImageView
-                    android:id="@+id/imageView1"
+
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/main_bottom_activityinfo" />
@@ -90,7 +88,7 @@
                     android:layout_height="wrap_content" >
 
                     <ImageView
-                        android:id="@+id/imageView1"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/main_bottom_activityinfo" />
@@ -152,15 +150,15 @@
                     android:layout_height="wrap_content" >
 
                     <ImageView
-                        android:id="@+id/imageView1"
+                        android:id="@+id/imageView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/main_bottom_activityinfo" />
 
                     <TextView
-                        android:id="@+id/textView1"
+                        android:id="@+id/textView2"
                         style="@style/activity_type_detail_item_style"
-                        android:text="建议1"
+                        android:text="建议2"
                         android:textColor="@color/White" />
                 </LinearLayout>
 
@@ -170,7 +168,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_sport_advice_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -182,7 +180,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_sport_spinner_2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -205,15 +203,15 @@
                     android:layout_height="wrap_content" >
 
                     <ImageView
-                        android:id="@+id/imageView1"
+                        android:id="@+id/imageView3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/main_bottom_activityinfo" />
 
                     <TextView
-                        android:id="@+id/textView1"
+                        android:id="@+id/textView3"
                         style="@style/activity_type_detail_item_style"
-                        android:text="建议1"
+                        android:text="建议3"
                         android:textColor="@color/White" />
                 </LinearLayout>
 
@@ -223,7 +221,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_sport_advice_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -235,7 +233,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_sport_spinner_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -265,15 +263,15 @@
                     android:layout_height="wrap_content" >
 
                     <ImageView
-                        android:id="@+id/imageView1"
+
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/main_bottom_activityinfo" />
 
                     <TextView
-                        android:id="@+id/textView1"
+                        android:id="@+id/textView4"
                         style="@style/activity_type_detail_item_style"
-                        android:text="建议1"
+                        android:text="建议4"
                         android:textColor="@color/White" />
                 </LinearLayout>
 
@@ -283,7 +281,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_sport_advice_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -295,7 +293,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_sport_spinner_4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -318,15 +316,14 @@
                     android:layout_height="wrap_content" >
 
                     <ImageView
-                        android:id="@+id/imageView1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/main_bottom_activityinfo" />
 
                     <TextView
-                        android:id="@+id/textView1"
+                        android:id="@+id/textView5"
                         style="@style/activity_type_detail_item_style"
-                        android:text="建议1"
+                        android:text="建议5"
                         android:textColor="@color/White" />
                 </LinearLayout>
 
@@ -336,7 +333,7 @@
                     android:layout_marginTop="8dip" >
 
                     <EditText
-                        android:id="@+id/type_detail_sport_advice"
+                        android:id="@+id/type_detail_sport_advice_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
@@ -348,7 +345,7 @@
                     android:layout_marginTop="8dip" >
 
                     <Spinner
-                        android:id="@+id/type_detail_sport_spinner"
+                        android:id="@+id/type_detail_sport_spinner_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
