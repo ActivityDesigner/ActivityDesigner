@@ -3,4 +3,7 @@ ActivityDesigner
 
 ActivityDesigner's repository
 
-人员：刘昊东，王鑫，张良
+人员：刘昊东，王鑫，
+####以上是傻机
+--------------------
+张良
